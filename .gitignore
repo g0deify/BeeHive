@@ -1,0 +1,23 @@
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+bld/
+
+# NuGet Packages
+*.nupkg
+packages/*
+!packages/build/
+
+# Runtime generated files
+Screenshots/
+Downloads/
