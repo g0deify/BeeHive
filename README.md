@@ -17,9 +17,8 @@ BeeHive demonstrates MQTT protocol implementation with a client-server architect
 ### Commands
 - `whoami` - Get current user information
 - `dir [path]` - List directory contents
-- `tasklist` - List running processes
 - `systeminfo` - Get system information
-- `shell:command` - Execute shell commands (180s timeout)
+- `shell command` - Execute shell commands (180s timeout)
 - `screenshot` - Capture and retrieve screenshot
 - `download "path"` - Download file from client (50MB max)
 - `upload "src" "dest"` - Upload file to client
@@ -39,20 +38,6 @@ BeeHive demonstrates MQTT protocol implementation with a client-server architect
 - **Protocol:** MQTT over public brokers (HiveMQ, Mosquitto, EMQX)
 - **Communication:** Base64-encoded message passing
 
-## Technology Stack
-
-- C# / .NET Framework 4.7.2
-- Windows Forms
-- MQTT (MQTTnet library)
-- Windows Native APIs (P/Invoke)
-
-## Performance
-
-Native Windows API implementation:
-- `whoami`: 5ms (100x faster than cmd.exe)
-- `dir`: 10ms (30x faster)
-- `tasklist`: 50ms (16x faster)
-
 ## MQTT Brokers
 
 - broker.hivemq.com:1883 (Primary)
@@ -60,13 +45,6 @@ Native Windows API implementation:
 - broker.emqx.io:1883 (Backup)
 
 *Free public MQTT brokers for testing and educational use*
-
-## Limitations
-
-- No encryption (Base64 encoding only)
-- Windows only
-- No authentication
-- Requires public MQTT broker
 
 ---
 
